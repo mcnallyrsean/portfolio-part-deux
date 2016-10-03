@@ -47,7 +47,8 @@ group :development do
   gem 'better_errors'
   gem 'capistrano', '~> 3.6', '>= 3.6.1'
   gem 'capistrano-rails', '~> 1.1', '>= 1.1.7'
-  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+  gem 'capistrano-rbenv'
+  gem 'capistrano-passenger'
 end
 
 group :production do
