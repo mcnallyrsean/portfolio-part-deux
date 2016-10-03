@@ -45,6 +45,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'better_errors'
+  gem 'capistrano', '~> 3.6', '>= 3.6.1'
+  gem 'capistrano-rails', '~> 1.1', '>= 1.1.7'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
 end
 
 group :production do
