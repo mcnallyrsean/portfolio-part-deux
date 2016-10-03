@@ -10,6 +10,8 @@ set :repo_url, 'git@github.com:seanmcnally88/portfolio-part-deux.git'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/deploy-this/portfolio-part-deux'
 
+set :passenger_restart_with_touch, true
+
 # Default value for :scm is :git
 # set :scm, :git
 
