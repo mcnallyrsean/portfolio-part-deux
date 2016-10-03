@@ -1,0 +1,152 @@
+$white: #ffffff;
+$light-blue: #19b5fe;
+$blackish: #444444;
+
+.landing-hello{
+  margin: 5% 0 0 0;
+}
+#intro-type,
+#work-home h1{
+  // background: rgba(44, 62, 80, .9);
+  background: rgba(23, 50, 57, .925);
+  line-height: 1.2;
+  color: $white;
+  font-size: 50px;
+  font-weight: 900;
+  display: inline;
+}
+
+#intro-type-reload{
+  display: none;
+  background: rgba(23, 50, 57, .925);
+  line-height: 1.2;
+  color: $white;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#menu-right{
+  font-weight: bold;
+  color: $white;
+  font-size: 22px;
+  position: fixed;
+  bottom: 7.5%;
+  li{
+    line-height: 1.2;
+    text-align: center;
+    list-style-type: none !important;
+    img{
+      width: auto;
+      max-width: 50%;
+      border-radius: 100px;
+    }
+  }
+  a{
+    color: $white;
+    &:hover{
+      color: $light-blue;
+      font-size: 102%;
+      text-decoration: none;
+    }
+  }
+}
+#work-home {
+  #work-home-header{
+    float: left;
+    clear: left;
+  }
+  .work-column{
+    float: left;
+  }
+  .uk-thumbnail {
+    background: rgba(23, 50, 57, .925);
+    a{
+      text-decoration: none;
+    }
+    i {
+      font-size: 110px;
+      color: $white;
+      &:hover{
+        cursor: pointer;
+        color: $light-blue;
+      }
+    }
+  }
+}
+
+#projects-index {
+  padding-top: 2.5%;
+  .uk-thumbnail {
+    margin: .75%;
+    border-radius: 10px;
+    img{
+      border-radius: 10px;
+    }
+
+    &:hover{
+      background-color: $light-blue;
+      i{
+        color: $white;
+      }
+    }
+    .uk-thumbnail-caption {
+      h2{
+        color: $blackish;
+        margin-top: 1%;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+      ul {
+        padding-left: 0;
+        li {
+          display: inline-block;
+          padding: 1%;
+        }
+      }
+    }
+  }
+}
+
+#projects-show{
+  padding-top: 1%;
+  #projects-show-panel{
+    padding: 2%;
+    background: rgba(23, 50, 57, .925);
+    ul {
+      padding-left: 0;
+      li {
+        display: inline-block;
+        padding-top: 1.5%;
+        padding-right: 5%;
+      }
+    }
+    h2{
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    a{
+      color: $white;
+      &:hover{
+        // color: $light-blue;
+        text-decoration: none;
+      }
+    }
+    i{
+      color: $white;
+      font-size: 50px;
+      text-align: center;
+    }
+    #visit{
+      float: right;
+      clear: right;
+      font-size: 20px;
+      padding: 2%;
+      background-color: $light-blue;
+      border-radius: 10px;
+      &:hover{
+        background-color: $white;
+        color: $light-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<div class="uk-grid" id="projects-index">
+
+  <div class="uk-width-2-3 uk-panel">
+    <% @projects.each do |project| %>
+      <a class="uk-thumbnail uk-thumbnail-small animated zoomIn" href="/projects/<%= project.id %>">
+      <%= image_tag(project.screenshot) %>
+        <div class="uk-thumbnail-caption">
+          <h2><%= project.name %></h2>
+          <ul>
+            <% project.technologies.each do |t| %>
+              <li><i class=<%= t.i_tag %>></i></li>
+            <% end %>
+          </ul>
+        </div>
+      </a>
+    <% end %>
+  </div>
+
+  <%= render "partials/contact" %>
+</div>

@@ -1,0 +1,16 @@
+<% @title=@project.name %>
+<div class="uk-grid" id="projects-show">
+
+  <div class="uk-width-2-3 uk-panel" id="projects-show-panel">
+    <%= image_tag(@project.screenshot) %>
+    <h2><%= @project.name %>    <a href="<%= @project.url %>" target="_blank" rel="nofollow" id="visit" >Visit Me!</a></h2>
+    <p><%= @project.description %></p>
+    <ul>
+      <% @project.technologies.each do |t| %>
+        <li><i class=<%= t.i_tag %>></i></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <%= render "partials/contact" %>
+</div>
